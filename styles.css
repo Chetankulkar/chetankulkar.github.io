@@ -12,6 +12,10 @@ header {
     padding: 1em 0;
 }
 
+h1, h2, h3 {
+    color: #333;
+}
+
 nav {
     background-color: #444;
     color: #fff;
@@ -37,6 +41,18 @@ nav a {
 
 section {
     padding: 40px;
+    background-color: #fff;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    margin-bottom: 8px;
 }
 
 footer {
@@ -47,4 +63,13 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+    nav li {
+        display: block;
+        margin: 0;
+        text-align: center;
+    }
 }
